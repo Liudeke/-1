@@ -1,0 +1,117 @@
+/* pages/home/home.wxss */
+
+.imghead {
+    width: 750rpx;
+    height: calc(750prx *190/375);
+    margin-top: -70rpx;
+}
+
+.headView {
+    flex-direction: column;
+    height: calc(750rpx *150/375); 
+    width: 750rpx;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    /* align-items: center; */
+    background-image: url("https://cdn.u1.huluxia.com/g3/M03/56/58/wKgBOV3aDaCAUMheAAG80Azn__c682.jpg");
+}
+
+.viewbottom {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgitem {
+    width: 22px;
+    height: 22px;
+    margin-left: 60px;
+    margin-top: 18px;
+}
+
+.txtItem {
+    margin-left: 15px;
+    margin-top: 15px;
+    color: white;
+    /* font-size: ; */
+}
+.HiText{
+    font-size: 15px;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.btnItem {
+    display: flex;
+    height: 60px;
+    width: 300px;
+    background-color: #6290EC;
+    margin-top: 20px;
+}
+
+.btnItem1 {
+    display: flex;
+    height: 60px;
+    width: 300px;
+    background-color: #44D066;
+    margin-top: 20px;
+}
+
+.btnItem2 {
+    display: flex;
+    height: 60px;
+    width: 300px;
+    background-color: #E79739;
+    margin-top: 20px;
+}
+.btnItem3 {
+    display: flex;
+    height: 60px;
+    width: 300px;
+    background-color: #ED654F;
+    margin-top: 20px;
+}
+
+.userinfo1 {
+    width: 128rpx;
+    height: 128rpx;
+    margin-left: 30px;
+    margin-top: 30px;
+    /* background-color: tomato; */
+}
+
+.textInfo {
+    color: white;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-avatar1 {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 0rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+
+.usermotto {
+    margin-top: 200px;
+}

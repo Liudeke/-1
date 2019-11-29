@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/myitems/myitems",
+    "pages/iteminfo/iteminfo",
+    "pages/editorName/editorName",
+    "pages/selected/selected",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/QRCode/QRCode",
+    "pages/index1/index1",
+    "pages/demo4/demo4",
+    "pages/demo3/demo3",
+    "pages/demo2/demo2",
+    "pages/demo1/demo1",
+    "pages/demo/demo",
+    "pages/img/img",
+    "pages/import/import",
+    "pages/mine/mine",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "高清解剖台",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "yellow"
+  },
+  "tabBar": {
+    "selectedColor": "#629EE4",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "slices/shouye.png",
+        "selectedIconPath": "slices/shouye1.png"
+      },
+      {
+        "pagePath": "pages/img/img",
+        "text": "历史",
+        "iconPath": "slices/lishi.png",
+        "selectedIconPath": "slices/lishi1.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "收藏",
+        "iconPath": "slices/shoucang.png",
+        "selectedIconPath": "slices/shoucang1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "设置",
+        "iconPath": "slices/shezhi.png",
+        "selectedIconPath": "slices/shezhi1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

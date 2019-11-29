@@ -1,0 +1,9 @@
+<!--pages/demo4/demo4.wxml-->
+<text selectable="{{true}}" decode="{{true}}">长安复制 &nbsp; 123</text>
+<view >
+<image mode="aspectFit" src="https://cdn.u1.huluxia.com/g3/M02/53/8D/wKgBOV3YpUiAbD4HAAKF-kmnI8Y361.jpg" />
+</view>
+<view >
+    <navigator url="/pages/demo3/demo3">demo3</navigator>
+    <navigator url="/pages/demo3/demo3">demo3</navigator>
+</view>

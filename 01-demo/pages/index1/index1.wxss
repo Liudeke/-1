@@ -1,0 +1,5 @@
+
+.page-section-spacing{
+  width: 375px;
+  height: 190px;
+}

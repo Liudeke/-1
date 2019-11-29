@@ -1,0 +1,6 @@
+<view class="viewBg" hover-class="none" hover-stop-propagation="false">
+    <view class="upboard"></view>
+    <input class="inputContent" type="text" value="{{content}}" bindinput="inputSetContent"/>
+    <view class="downboard" bindtap="finshedEditor"> 完成</view>
+
+</view>

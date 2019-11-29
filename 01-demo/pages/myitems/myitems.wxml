@@ -1,0 +1,26 @@
+<view class="bg">
+    <view class="boradstyle" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="SearchStyle">
+        <image src="../../slices/shousuotu.png" mode="scaleToFill" class="imgStyle"></image>
+        <input class="inputStyle" placeholder="输入名称" bindblur='bindblurEvent' bindinput="bindinputEvent" />
+    </view>
+    <scroll-view scroll-y="true" bindscroll="scroll">
+        <!-- <button type="default" size="22" bindtap="clickScanCode" hover-class="other-button-hover">
+        添加
+    </button> -->
+        <view class="coverView" wx:if="{{IsShowCount}}">
+            <text class="textStyle">还未添加预置位，请前往解剖台扫码添加</text>
+            <button bindtap="ScanAdd" class="btnStyle">扫一扫添加</button>
+        </view>
+        <view class="view-item" wx:for="{{list}}" wx:key="index">
+            <image class="left-img" src="../../slices/demo.png" alt="无法显示图片" bind:tap="itemInfo" data-operation="{{item}}" />
+            <view class="middle-word" bind:tap="itemInfo" data-operation="{{item}}">
+                <view class="name">{{item.name}}</view>
+                <view class="savetime">{{item.Savetime}}</view>
+            </view>
+            <view>
+                <image class="Scanimg" src="../../slices/erweima.png" bindtap="previewImg" data-operation="{{item}}" />
+            </view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,3 @@
+/* pages/myitems/myitems.wxss */
+
+@import "../../styles/comment.wxss"

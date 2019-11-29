@@ -1,0 +1,59 @@
+<view>
+    <view>
+        <view class="headView">
+            <!-- <image src="../../slices/abc.png" mode="aspectFit|aspectFill|widthFix" class="imghead" mode="aspectFit"></image> -->
+            <view class="userinfo1">
+                <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+                    获取头像昵称
+                </button>
+                <block wx:else>
+                    <image bindtap="bindViewTap" class="userinfo-avatar1" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                    <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+                </block>
+            </view>
+            <text class='textInfo' >{{motto}}</text>
+        </view>
+        <view class="viewbottom">
+            <view class="btnItem" hover-class="none" hover-stop-propagation="false" bindtap = "selectedpage">
+                <image class="imgitem" src="../../slices/N锁定位置.png" />
+                <text class="txtItem">精选预置位</text>
+            </view>
+            <view class="btnItem1" hover-class="none" hover-stop-propagation="false" bindtap = "myitemspage">
+                <image class="imgitem" src="../../slices/形状.png" />
+                <text class="txtItem">我的预置位</text>
+            </view>
+            <view class="btnItem2" hover-class="none" hover-stop-propagation="false" bindtap = "importitempage">
+                <image class="imgitem" src="../../slices/scanimg.png" />
+                <text class="txtItem">扫码导入</text>
+            </view>
+             <view class="btnItem3" hover-class="none" hover-stop-propagation="false" bindtap = "mulupage">
+                <image class="imgitem" src="../../slices/mulu.png" />
+                <text class="txtItem">目录</text>
+            </view>
+        </view>
+        <!-- <view class="userinfo1">
+                <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+                    获取头像昵称
+                </button>
+                <block wx:else>
+                    <image bindtap="bindViewTap" class="userinfo-avatar1" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+                </block>
+            </view> -->
+    </view>
+    
+</view>
+<!-- <view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            获取头像昵称
+        </button>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+    <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+    </view>
+</view> -->

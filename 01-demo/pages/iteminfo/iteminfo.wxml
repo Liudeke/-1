@@ -1,0 +1,17 @@
+<view class="iteminfo_upview" hover-class="none" hover-stop-propagation="false">
+    <image src="../../slices/iteminfobg.png" mode="scaleToFill" class="iteminfo_upimg" />
+    <view class="iteminfo_up_Two">
+        <view class="iteminfo_up_Two_One" hover-class="none" hover-stop-propagation="false">
+            <text class="iteminfo_up_Two_One_Txt1">{{itemData.name}}</text>
+            <text class="iteminfo_up_Two_One_Txt2">{{itemData.Savetime}}</text>
+        </view>
+        <image bindtap="EditorTxt" src="../../slices/editor.png" class="iteminfo_up_Two_img" wx:if="{{isShowDel}}"/>
+    </view>
+</view>
+<view class="iteminfo_downview" hover-class="none" hover-stop-propagation="false">
+    <view bindtap="ExportQRCode"  class="btnItem1" style="margin-top:{{itemheight}}">导入到高清解剖台</view>
+    <view bindtap="ExportQRCode" class="btnItem2">分享</view>
+    <view bindtap="CollectionData" class="btnItem3" wx:if="{{!isCollected}}">收藏</view>
+    <view bindtap="DoneCollectionData" class="btnItem3" wx:if="{{isCollected}}">已收藏</view>
+    <view bindtap="DeleteData" class="btnItem4" wx:if="{{isShowDel}}">删除</view>
+</view>

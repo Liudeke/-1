@@ -1,0 +1,30 @@
+/* pages/editorName/editorName.wxss */
+.viewBg{
+    background-color: #EFEFEF;
+    height: calc(750rpx*606/375);
+    width: calc(750rpx*375/375);
+    display: flex;
+    flex-direction: column;
+}
+.inputContent{
+    background-color: #FFFFFF;
+    height: calc(750rpx*44/375);
+    width: calc(750rpx*375/375);
+    padding-top: 5rpx;
+    text-align: center;
+    
+}
+.upboard{
+    background-color: #EFEFEF;
+    height: calc(750rpx*5/375);
+    width: calc(750rpx*375/375);
+}
+.downboard{
+    background-color: #FFFFFF;
+    height: calc(750rpx*42/375);
+    width: calc(750rpx*300/375);
+    margin-left: calc(750rpx*37/375);
+    margin-top: calc(750rpx*480/375);
+    text-align: center;
+    line-height: calc(750rpx*40/375);
+}

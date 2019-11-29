@@ -1,0 +1,30 @@
+<!--pages/demo1/demo1.wxml-->
+<text>pages/demo1/demo1.wxml</text>
+<view>
+<text > 王新才</text>
+</view>
+<view >
+<text >{{msg}}</text>
+</view>
+<view >
+<checkbox checked="true" >
+    
+</checkbox>
+</view>
+<view >
+<view  wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="*this">
+索引：{{index}}
+--
+值：{{item.name}}
+</view>
+</view>
+<view >
+<view >对象</view>
+<view wx:for="{{people}}">
+    {{item.name}}
+    {{index}}
+</view>
+</view>
+<view wx:if="{{true}}">123547</view>
+<view wx:elif="{{true}}">123547</view>
+<view wx:else="{{true}}">123547</view>
