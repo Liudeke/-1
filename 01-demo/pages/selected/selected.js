@@ -36,13 +36,15 @@ Page({
     } catch (e) {
       // Do something when catch error
     };
-
+    let abc = "大王胆";
+    console.log(abc.valueOf('王'))
   },
+
   itemInfo: function (data) {
     //console.log("147")
     var txtdata = JSON.stringify(data.currentTarget.dataset.operation);
     wx.navigateTo({
-      url: "/pages/iteminfo/iteminfo?code="+txtdata+"&delete=false",
+      url: "/pages/iteminfo/iteminfo?code=" + txtdata + "&delete=false",
       success: (result) => {
 
       },
@@ -51,11 +53,36 @@ Page({
     });
   },
   bindinputEvent: function (e) {
-    let content=e.detail.value;
-    if(content==null||content==""){
+    let content = e.detail.value;
+    if (content == null || content == "") {
       console.log('e.detail.value')
+      try {
+        var value = wx.getStorageSync('selecteddatas')
+        //console.log('value')
+  
+        if (value) {
+          // Do something with return value
+          // console.log(value)
+          this.setData({
+            list: value
+          })
+        }
+      } catch (e) {
+        // Do something when catch error
+      };
     }
-    console.log(e.detail.value)
+    let searchList = [];
+    this.data.list.forEach((item, index) => {
+
+      if (item.name.indexOf(content) >=0) {
+        searchList = searchList.concat([item]);
+        console.log(searchList.length)
+      }
+
+    });
+    this.setData({
+      list:searchList
+    })
   },
   bindblurEvent: function () {
     console.log("bindblurEvent")
