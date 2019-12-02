@@ -1,2 +1,14 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<!-- pages/mine/mine.wxml -->
+<view class="bg">
+    <view class="board"></view>
+    <view class="one">
+        <text class="textOne">语言切换</text>
+        <image bindtap="cntoen" wx:if="{{!isCN}}" class="img" src="../../slices/shezhiCheck1.png" />
+        <image bindtap="cntoen" wx:if="{{isCN}}" class="img" src="../../slices/shezhiCheck12.png" />
+    </view>
+    <view class="board"></view>
+    <view class="one">
+        <text class="textOne">关于我们</text>
+        <image bindtap="aboutus" class="img1" src="../../slices/go.png" />
+    </view>
+</view>

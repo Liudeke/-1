@@ -12,9 +12,10 @@
     width: calc(750rpx*140/375);
     height: calc(750rpx*40/375);
     background-color: #6290EC;
+    text-align: center;
     margin-top: calc(750rpx*140/375);
     color: white;
-    line-height: calc(750rpx*40/375);
+    line-height: calc(750rpx*20/375);
 }
 .imgStyle{
     width: calc(750rpx*14/375);

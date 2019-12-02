@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/aboutus/aboutus",
     "pages/myitems/myitems",
     "pages/iteminfo/iteminfo",
     "pages/editorName/editorName",

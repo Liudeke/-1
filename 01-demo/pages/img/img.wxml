@@ -1,2 +1,17 @@
 <!--pages/img/img.wxml-->
-<text>pages/img/img.wxml</text>
+<scroll-view scroll-y="true" bindscroll="scroll">
+    <view class="coverView" wx:if="{{IsShowCount}}">
+        <text class="textStyle">历史记录为空</text>
+        <button bindtap="ScanAdd" class="btnStyle">前往精选</button>
+    </view>
+    <view class="view-item" wx:for="{{list}}" wx:key="index">
+        <image class="left-img" src="../../slices/demo.png" alt="无法显示图片" bind:tap="itemInfo" data-operation="{{item}}" />
+        <view class="middle-word" bind:tap="itemInfo" data-operation="{{item}}">
+            <view class="name">{{item.name}}</view>
+            <view class="savetime">{{item.Savetime}}</view>
+        </view>
+        <view>
+            <image class="Scanimg" src="../../slices/erweima.png" bindtap="previewImg" data-operation="{{item}}" />
+        </view>
+    </view>
+</scroll-view>

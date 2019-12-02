@@ -1,1 +1,2 @@
 /* pages/img/img.wxss */
+@import "../../styles/comment.wxss"

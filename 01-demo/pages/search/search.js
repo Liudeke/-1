@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: []
+    list: [],
+    IsShowCount: false
 
   },
 
@@ -114,8 +115,21 @@ Page({
     myThis.setData({
       list: this.data.list
     })
+    if (this.data.list.length == 0) {
+      this.setData({
+        IsShowCount: true
+      })
+    } else {
+      this.setData({
+        IsShowCount: false
+      })
+    }
   },
-
+  ScanAdd: function () {
+    wx.switchTab({
+      url: "/pages/home/home"
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

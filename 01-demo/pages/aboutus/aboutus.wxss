@@ -1,0 +1,27 @@
+.bg{
+    height: calc(750rpx*607/375);
+    width: calc(750rpx*375/375);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://cdn.u1.huluxia.com/g3/M02/67/60/wKgBOV3kpk2AOPBCAAhGmYdxZv0088.png");
+}
+.txt1{
+    color: white;
+    font-size: 15px;
+    margin-left: calc(750rpx*30/375);
+    margin-top: calc(750rpx*120/375);
+}
+.txt2{
+    color: white;
+    font-size: 13px;
+    margin-left: calc(750rpx*30/375);
+    margin-right: calc(750rpx*20/375);
+    margin-top: calc(750rpx*10/375);
+}
+.txt3{
+    color: white;
+    font-size: 15px;
+    margin-left: calc(750rpx*30/375);
+    margin-top: calc(750rpx*20/375);
+}
