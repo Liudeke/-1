@@ -108,11 +108,38 @@ Page({
     })
   },
   bindinputEvent: function (e) {
-    let content=e.detail.value;
-    if(content==null||content==""){
-      console.log('e.detail.value')
+    let content = e.detail.value;
+    if (content == null || content == "") {
+      try {
+
+        var value = wx.getStorageSync('myItems')
+        if (value) {
+          this.setData({
+            list: value
+          })
+        }
+        if (!value) {
+          this.setData({
+            list: []
+          })
+        }
+
+      } catch (e) {
+
+      }
     }
-    console.log(e.detail.value)
+    let searchList = [];
+    this.data.list.forEach((item, index) => {
+
+      if (item.name.indexOf(content) >= 0) {
+        searchList = searchList.concat([item]);
+        console.log(searchList.length)
+      }
+
+    });
+    this.setData({
+      list: searchList
+    })
   },
   bindblurEvent: function () {
     console.log("bindblurEvent")

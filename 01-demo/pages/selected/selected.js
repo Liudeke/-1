@@ -58,18 +58,18 @@ Page({
       console.log('e.detail.value')
       try {
         var value = wx.getStorageSync('selecteddatas')
-        //console.log('value')
+       
   
         if (value) {
-          // Do something with return value
-          // console.log(value)
+         
           this.setData({
             list: value
           })
         }
       } catch (e) {
-        // Do something when catch error
+       
       };
+
     }
     let searchList = [];
     this.data.list.forEach((item, index) => {
